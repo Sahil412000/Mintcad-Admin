@@ -1,0 +1,8 @@
+{
+  "/(dashboard)/wallets/page": "app/(dashboard)/wallets/page.js",
+  "/(dashboard)/help/page": "app/(dashboard)/help/page.js",
+  "/(dashboard)/designs/page": "app/(dashboard)/designs/page.js",
+  "/(dashboard)/blogs/page": "app/(dashboard)/blogs/page.js",
+  "/(dashboard)/analytics/page": "app/(dashboard)/analytics/page.js",
+  "/(dashboard)/blogs/edit/page": "app/(dashboard)/blogs/edit/page.js"
+}

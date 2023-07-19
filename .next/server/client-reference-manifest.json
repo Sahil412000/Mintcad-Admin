@@ -1,0 +1,304 @@
+{
+  "ssrModuleMapping": {
+    "(app-client)/./node_modules/next/dist/client/components/error-boundary.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/error-boundary.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/components/app-router.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/app-router.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/components/layout-router.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/layout-router.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/render-from-template-context.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(dashboard)/layout.jsx": {
+      "*": {
+        "id": "(sc_client)/./app/(dashboard)/layout.jsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(dashboard)/help/page.jsx": {
+      "*": {
+        "id": "(sc_client)/./app/(dashboard)/help/page.jsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(dashboard)/help/add/page.jsx": {
+      "*": {
+        "id": "(sc_client)/./app/(dashboard)/help/add/page.jsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(dashboard)/grantadmin/page.jsx": {
+      "*": {
+        "id": "(sc_client)/./app/(dashboard)/grantadmin/page.jsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(dashboard)/help/edit/page.jsx": {
+      "*": {
+        "id": "(sc_client)/./app/(dashboard)/help/edit/page.jsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/componants/Modals/WalletsModal.jsx": {
+      "*": {
+        "id": "(sc_client)/./app/componants/Modals/WalletsModal.jsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/componants/Modals/DesignModal.jsx": {
+      "*": {
+        "id": "(sc_client)/./app/componants/Modals/DesignModal.jsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(dashboard)/blogs/page.jsx": {
+      "*": {
+        "id": "(sc_client)/./app/(dashboard)/blogs/page.jsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(dashboard)/blogs/edit/page.jsx": {
+      "*": {
+        "id": "(sc_client)/./app/(dashboard)/blogs/edit/page.jsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    }
+  },
+  "edgeSSRModuleMapping": {},
+  "clientModules": {
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\node_modules\\next\\dist\\client\\components\\error-boundary.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\node_modules\\next\\dist\\client\\components\\app-router.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\node_modules\\next\\dist\\client\\components\\layout-router.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\node_modules\\next\\dist\\esm\\client\\components\\layout-router.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\node_modules\\next\\dist\\client\\components\\render-from-template-context.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\node_modules\\next\\dist\\esm\\client\\components\\render-from-template-context.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\node_modules\\next\\dist\\client\\components\\static-generation-searchparams-bailout-provider.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\node_modules\\next\\dist\\esm\\client\\components\\static-generation-searchparams-bailout-provider.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\layout.jsx": {
+      "id": "(app-client)/./app/(dashboard)/layout.jsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/layout:static/chunks/app/(dashboard)/layout.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\help\\page.jsx": {
+      "id": "(app-client)/./app/(dashboard)/help/page.jsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/help/page:static/chunks/app/(dashboard)/help/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\help\\add\\page.jsx": {
+      "id": "(app-client)/./app/(dashboard)/help/add/page.jsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/help/add/page:static/chunks/app/(dashboard)/help/add/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}": {
+      "id": "(app-client)/./node_modules/next/font/google/target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\globals.css": {
+      "id": "(app-client)/./app/globals.css",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\grantadmin\\page.jsx": {
+      "id": "(app-client)/./app/(dashboard)/grantadmin/page.jsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/grantadmin/page:static/chunks/app/(dashboard)/grantadmin/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\help\\edit\\page.jsx": {
+      "id": "(app-client)/./app/(dashboard)/help/edit/page.jsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/help/edit/page:static/chunks/app/(dashboard)/help/edit/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\componants\\Modals\\WalletsModal.jsx": {
+      "id": "(app-client)/./app/componants/Modals/WalletsModal.jsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/wallets/page:static/chunks/app/(dashboard)/wallets/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\componants\\Modals\\DesignModal.jsx": {
+      "id": "(app-client)/./app/componants/Modals/DesignModal.jsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/designs/page:static/chunks/app/(dashboard)/designs/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\blogs\\page.jsx": {
+      "id": "(app-client)/./app/(dashboard)/blogs/page.jsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/blogs/page:static/chunks/app/(dashboard)/blogs/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\blogs\\edit\\page.jsx": {
+      "id": "(app-client)/./app/(dashboard)/blogs/edit/page.jsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/blogs/edit/page:static/chunks/app/(dashboard)/blogs/edit/page.js"
+      ],
+      "async": false
+    }
+  },
+  "entryCSSFiles": {
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\layout": [],
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\help\\page": [],
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\help\\add\\page": [],
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\page": [],
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\layout": [
+      "static/css/app/layout.css"
+    ],
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\grantadmin\\page": [],
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\help\\edit\\page": [],
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\env\\page": [],
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\wallets\\page": [],
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\designs\\page": [],
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\analytics\\page": [],
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\blogs\\page": [],
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\blogs\\edit\\page": []
+  }
+}
