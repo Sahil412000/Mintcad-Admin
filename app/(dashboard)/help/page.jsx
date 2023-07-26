@@ -8,18 +8,41 @@ import axios from "axios";
 function page() {
   const [help, setHelp] = useState([]);
 
+  const [jwtToken, setJwtToken] = useState("");
+
   const getHelp = async () => {
-    //await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/help/help`).then((response) => {
-    //     console.log(response);
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   });
+    await axios
+      .get(`${process.env.NEXT_PUBLIC_API_URL}/help/help`, {
+        headers: {
+          "Content-Type": "application/json",
+          "x-access-token": jwtToken,
+        },
+      })
+      .then((response) => {
+        console.log(response);
+        const responseData = response.data.data;
+        setHelp(responseData);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   useEffect(() => {
-    getHelp();
+    if (window) {
+      const jwtToken = window.sessionStorage.getItem("jwtToken");
+      if (jwtToken === null) {
+        router.push("/login");
+      }
+      setJwtToken(jwtToken);
+    }
   }, []);
+
+  useEffect(() => {
+    if (jwtToken !== "") {
+      getHelp();
+    }
+  }, [jwtToken]);
 
   return (
     <div className='w-full space-y-10 px-10 py-5'>
@@ -48,27 +71,20 @@ function page() {
           </Link>
         </div>
       </div>
-      <div className=''>
-        <HelpCard
-          question='How to mint an NFT on Mintcad '
-          topic='Creating'
-          date='21/12/22'
-        />
-      </div>
-      <div className=''>
-        <HelpCard
-          question='How to mint an NFT on Mintcad '
-          topic='Creating'
-          date='21/12/22'
-        />
-      </div>
-      <div className=''>
-        <HelpCard
-          question='How to mint an NFT on Mintcad '
-          topic='Creating'
-          date='21/12/22'
-        />
-      </div>
+      {help &&
+        help.length > 0 &&
+        help.map((value, index) => {
+          return (
+            <div className='' key={index}>
+              <HelpCard
+                question={value.headingTitle}
+                topic={value.topicName}
+                date={value.updatedAt}
+                helpObjId={value._id}
+              />
+            </div>
+          );
+        })}
     </div>
   );
 }

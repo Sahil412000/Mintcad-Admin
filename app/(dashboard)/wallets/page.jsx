@@ -11,12 +11,12 @@ const page = () => {
       </div>
       <div className='w-full flex items-end space-x-20'>
         <div className='flex w-2/3 flex-col space-y-1'>
-          <label htmlFor='address' className='font-bold'>
+          <label htmlFor='commisionAddress' className='font-bold'>
             Commision Address
           </label>
           <input
-            id='address'
-            name='address'
+            id='commisionAddress'
+            name='commisionAddress'
             type='text'
             className='w-full h-10 p-2 rounded-lg text-sm'
             placeholder='0x1e9209E3f4663F6b3Fc9bdF95FC5eEfb1cD3e15C'

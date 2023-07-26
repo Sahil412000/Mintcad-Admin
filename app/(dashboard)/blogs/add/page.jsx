@@ -1,11 +1,13 @@
 "use client";
 import { IconPlus } from "@tabler/icons-react";
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const page = () => {
   const [formInput, setFormInput] = useState({
-    blogImage: "",
+    blogImage:
+      "https://bafybeicqlkjc4cdtp5abi6d7e5wllclb25k3vc7plgxwteaecxudzo7x5a.ipfs.nftstorage.link/Screenshot_2023_05_25_at_2.06.05_PM.png",
     headingTitle: "",
     body: "",
     isAddedToBanner: false,
@@ -16,21 +18,34 @@ const page = () => {
     setFormInput({ ...formInput, [name]: value });
   };
 
+  const [jwtToken, setJwtToken] = useState("");
+
   const handleCreateBlog = async (e) => {
     e.preventDefault();
-    // await axios
-    //   .post(`${process.env.NEXT_PUBLIC_API_URL}/blog/create-blog`, formInput, {
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //   })
-    //   .then((response) => {
-    //     console.log(response);
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   });
+    await axios
+      .post(`${process.env.NEXT_PUBLIC_API_URL}/blog/create-blog`, formInput, {
+        headers: {
+          "Content-Type": "application/json",
+          "x-access-token": jwtToken,
+        },
+      })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
+
+  useEffect(() => {
+    if (window) {
+      const jwtToken = window.sessionStorage.getItem("jwtToken");
+      if (jwtToken === null) {
+        router.push("/login");
+      }
+      setJwtToken(jwtToken);
+    }
+  }, []);
 
   return (
     <div className='w-full h-max flex flex-col p-10 space-y-6'>

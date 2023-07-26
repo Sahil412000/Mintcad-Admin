@@ -1,11 +1,15 @@
 "use client";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+import axios from "axios";
 
 export default function Home() {
+  const router = useRouter();
+
   const [formInput, setFormInput] = useState({
-    email: null,
-    password: null,
-    code: null,
+    userEmail: "",
+    password: "",
+    code: "",
   });
 
   const handleInputChange = (e) => {
@@ -15,18 +19,27 @@ export default function Home() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    // await axios
-    //   .post(`${process.env.NEXT_PUBLIC_API_URL}/auth/login`, formInput, {
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //   })
-    //   .then((response) => {
-    //     console.log(response);
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   });
+    if (formInput.code === "") return;
+    const loginData = {
+      userEmail: formInput.userEmail,
+      password: formInput.password,
+      token: formInput.code,
+    };
+    await axios
+      .post(`${process.env.NEXT_PUBLIC_API_URL}/auth/login`, loginData, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+      .then((response) => {
+        console.log(response);
+        const jwtToken = response.data.data.jwtToken;
+        window.sessionStorage.setItem("jwtToken", jwtToken);
+        router.push("/analytics");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (
@@ -39,15 +52,15 @@ export default function Home() {
           <form className='space-y-3' action='#'>
             <div>
               <label
-                htmlFor='email'
+                htmlFor='userEmail'
                 className='block mb-2 text-sm font-medium text-gray-900 dark:text-white'
               >
                 Login ID
               </label>
               <input
                 type='email'
-                name='email'
-                id='email'
+                name='userEmail'
+                id='userEmail'
                 onChange={handleInputChange}
                 className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white'
                 placeholder='name@company.com'
@@ -64,6 +77,7 @@ export default function Home() {
               <input
                 type='password'
                 name='password'
+                value={formInput.password}
                 id='password'
                 placeholder='••••••••'
                 onChange={handleInputChange}
@@ -81,6 +95,8 @@ export default function Home() {
               <input
                 type='text'
                 name='code'
+                value={formInput.code}
+                onChange={handleInputChange}
                 id='2fa'
                 className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white'
                 placeholder='Enter 2fa code'

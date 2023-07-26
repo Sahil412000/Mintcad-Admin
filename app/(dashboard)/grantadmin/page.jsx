@@ -1,35 +1,51 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const page = () => {
+  const router = useRouter();
+
   const [userEmail, setUserEmail] = useState("");
+
+  const [jwtToken, setJwtToken] = useState("");
 
   const handleInputChange = (e) => {
     const { value } = e.target;
     setUserEmail(value);
   };
 
+  useEffect(() => {
+    if (window) {
+      const jwtToken = window.sessionStorage.getItem("jwtToken");
+      if (jwtToken === null) {
+        router.push("/login");
+      }
+      setJwtToken(jwtToken);
+    }
+  }, []);
+
   const handleGrantAdminAccess = async (e) => {
     e.preventDefault();
-    // if (!userEmail === "") {
-    //   await axios
-    //     .post(
-    //       `${process.env.NEXT_PUBLIC_API_URL}/auth/invite-admin`,
-    //       { userEmail: userEmail },
-    //       {
-    //         headers: {
-    //           "Content-Type": "application/json",
-    //         },
-    //       }
-    //     )
-    //     .then((response) => {
-    //       console.log(response);
-    //     })
-    //     .catch((error) => {
-    //       console.log(error);
-    //     });
-    // }
+    if (!userEmail === "") {
+      await axios
+        .post(
+          `${process.env.NEXT_PUBLIC_API_URL}/auth/invite-admin`,
+          { userEmail: userEmail },
+          {
+            headers: {
+              "Content-Type": "application/json",
+              "x-access-token": jwtToken,
+            },
+          }
+        )
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
   };
 
   return (

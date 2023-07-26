@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const page = () => {
   const [formInput, setFormInput] = useState({
@@ -10,6 +11,8 @@ const page = () => {
     body: "",
   });
 
+  const [jwtToken, setJwtToken] = useState("");
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormInput({ ...formInput, [name]: value });
@@ -17,19 +20,30 @@ const page = () => {
 
   const handleCreateHelp = async (e) => {
     e.preventDefault();
-    // await axios
-    //   .post(`${process.env.NEXT_PUBLIC_API_URL}/help/create-help`, formInput, {
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //   })
-    //   .then((response) => {
-    //     console.log(response);
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   });
+    await axios
+      .post(`${process.env.NEXT_PUBLIC_API_URL}/help/create-help`, formInput, {
+        headers: {
+          "Content-Type": "application/json",
+          "x-access-token": jwtToken,
+        },
+      })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
+
+  useEffect(() => {
+    if (window) {
+      const jwtToken = window.sessionStorage.getItem("jwtToken");
+      if (jwtToken === null) {
+        router.push("/login");
+      }
+      setJwtToken(jwtToken);
+    }
+  }, []);
 
   return (
     <div className='w-full h-max flex flex-col p-10 space-y-6'>
