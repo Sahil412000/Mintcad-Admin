@@ -1,5 +1,16 @@
 {
   "pages": {
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/(dashboard)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(dashboard)/layout.js"
+    ],
     "/(dashboard)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -15,41 +26,25 @@
       "static/chunks/main-app.js",
       "static/chunks/app/login/page.js"
     ],
-    "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
-    ],
-    "/(dashboard)/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/layout.js"
-    ],
-    "/(dashboard)/help/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/help/page.js"
-    ],
-    "/(dashboard)/help/add/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/help/add/page.js"
-    ],
     "/(dashboard)/grantadmin/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(dashboard)/grantadmin/page.js"
     ],
-    "/(dashboard)/help/edit/[helpObjId]/page": [
+    "/(dashboard)/env/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/help/edit/[helpObjId]/page.js"
+      "static/chunks/app/(dashboard)/env/page.js"
     ],
-    "/signup/page": [
+    "/(dashboard)/wallets/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/signup/page.js"
+      "static/chunks/app/(dashboard)/wallets/page.js"
+    ],
+    "/(dashboard)/designs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(dashboard)/designs/page.js"
     ]
   }
 }

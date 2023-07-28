@@ -1,8 +1,8 @@
 {
-  "/signup/page": "app/signup/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/login/page": "app/login/page.js",
-  "/(dashboard)/analytics/page": "app/(dashboard)/analytics/page.js",
   "/(dashboard)/grantadmin/page": "app/(dashboard)/grantadmin/page.js",
-  "/(dashboard)/help/page": "app/(dashboard)/help/page.js",
-  "/(dashboard)/help/edit/[helpObjId]/page": "app/(dashboard)/help/edit/[helpObjId]/page.js"
+  "/(dashboard)/analytics/page": "app/(dashboard)/analytics/page.js",
+  "/(dashboard)/designs/page": "app/(dashboard)/designs/page.js",
+  "/(dashboard)/wallets/page": "app/(dashboard)/wallets/page.js"
 }

@@ -40,6 +40,14 @@
         "async": false
       }
     },
+    "(app-client)/./app/(dashboard)/layout.jsx": {
+      "*": {
+        "id": "(sc_client)/./app/(dashboard)/layout.jsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./app/(dashboard)/page.jsx": {
       "*": {
         "id": "(sc_client)/./app/(dashboard)/page.jsx",
@@ -64,30 +72,6 @@
         "async": false
       }
     },
-    "(app-client)/./app/(dashboard)/layout.jsx": {
-      "*": {
-        "id": "(sc_client)/./app/(dashboard)/layout.jsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./app/(dashboard)/help/page.jsx": {
-      "*": {
-        "id": "(sc_client)/./app/(dashboard)/help/page.jsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./app/(dashboard)/help/add/page.jsx": {
-      "*": {
-        "id": "(sc_client)/./app/(dashboard)/help/add/page.jsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./app/(dashboard)/grantadmin/page.jsx": {
       "*": {
         "id": "(sc_client)/./app/(dashboard)/grantadmin/page.jsx",
@@ -96,17 +80,17 @@
         "async": false
       }
     },
-    "(app-client)/./app/(dashboard)/help/edit/[helpObjId]/page.jsx": {
+    "(app-client)/./app/componants/Modals/WalletsModal.jsx": {
       "*": {
-        "id": "(sc_client)/./app/(dashboard)/help/edit/[helpObjId]/page.jsx",
+        "id": "(sc_client)/./app/componants/Modals/WalletsModal.jsx",
         "name": "*",
         "chunks": [],
         "async": false
       }
     },
-    "(app-client)/./app/signup/page.js": {
+    "(app-client)/./app/componants/Modals/DesignModal.jsx": {
       "*": {
-        "id": "(sc_client)/./app/signup/page.js",
+        "id": "(sc_client)/./app/componants/Modals/DesignModal.jsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -195,30 +179,6 @@
       ],
       "async": false
     },
-    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\page.jsx": {
-      "id": "(app-client)/./app/(dashboard)/page.jsx",
-      "name": "*",
-      "chunks": [
-        "app/(dashboard)/page:static/chunks/app/(dashboard)/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\analytics\\page.jsx": {
-      "id": "(app-client)/./app/(dashboard)/analytics/page.jsx",
-      "name": "*",
-      "chunks": [
-        "app/(dashboard)/analytics/page:static/chunks/app/(dashboard)/analytics/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\login\\page.js": {
-      "id": "(app-client)/./app/login/page.js",
-      "name": "*",
-      "chunks": [
-        "app/login/page:static/chunks/app/login/page.js"
-      ],
-      "async": false
-    },
     "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}": {
       "id": "(app-client)/./node_modules/next/font/google/target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}",
       "name": "*",
@@ -243,19 +203,27 @@
       ],
       "async": false
     },
-    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\help\\page.jsx": {
-      "id": "(app-client)/./app/(dashboard)/help/page.jsx",
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\page.jsx": {
+      "id": "(app-client)/./app/(dashboard)/page.jsx",
       "name": "*",
       "chunks": [
-        "app/(dashboard)/help/page:static/chunks/app/(dashboard)/help/page.js"
+        "app/(dashboard)/page:static/chunks/app/(dashboard)/page.js"
       ],
       "async": false
     },
-    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\help\\add\\page.jsx": {
-      "id": "(app-client)/./app/(dashboard)/help/add/page.jsx",
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\analytics\\page.jsx": {
+      "id": "(app-client)/./app/(dashboard)/analytics/page.jsx",
       "name": "*",
       "chunks": [
-        "app/(dashboard)/help/add/page:static/chunks/app/(dashboard)/help/add/page.js"
+        "app/(dashboard)/analytics/page:static/chunks/app/(dashboard)/analytics/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\login\\page.js": {
+      "id": "(app-client)/./app/login/page.js",
+      "name": "*",
+      "chunks": [
+        "app/login/page:static/chunks/app/login/page.js"
       ],
       "async": false
     },
@@ -267,35 +235,34 @@
       ],
       "async": false
     },
-    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\help\\edit\\[helpObjId]\\page.jsx": {
-      "id": "(app-client)/./app/(dashboard)/help/edit/[helpObjId]/page.jsx",
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\componants\\Modals\\WalletsModal.jsx": {
+      "id": "(app-client)/./app/componants/Modals/WalletsModal.jsx",
       "name": "*",
       "chunks": [
-        "app/(dashboard)/help/edit/[helpObjId]/page:static/chunks/app/(dashboard)/help/edit/[helpObjId]/page.js"
+        "app/(dashboard)/wallets/page:static/chunks/app/(dashboard)/wallets/page.js"
       ],
       "async": false
     },
-    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\signup\\page.js": {
-      "id": "(app-client)/./app/signup/page.js",
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\componants\\Modals\\DesignModal.jsx": {
+      "id": "(app-client)/./app/componants/Modals/DesignModal.jsx",
       "name": "*",
       "chunks": [
-        "app/signup/page:static/chunks/app/signup/page.js"
+        "app/(dashboard)/designs/page:static/chunks/app/(dashboard)/designs/page.js"
       ],
       "async": false
     }
   },
   "entryCSSFiles": {
-    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\page": [],
-    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\analytics\\page": [],
-    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\login\\page": [],
     "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\layout": [
       "static/css/app/layout.css"
     ],
     "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\layout": [],
-    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\help\\page": [],
-    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\help\\add\\page": [],
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\page": [],
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\analytics\\page": [],
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\login\\page": [],
     "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\grantadmin\\page": [],
-    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\help\\edit\\[helpObjId]\\page": [],
-    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\signup\\page": []
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\env\\page": [],
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\wallets\\page": [],
+    "C:\\Users\\Supersapiens Devlab\\Desktop\\Supersapiens Projects\\mintAdmin\\app\\(dashboard)\\designs\\page": []
   }
 }
